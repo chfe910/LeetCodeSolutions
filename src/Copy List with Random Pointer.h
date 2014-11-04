@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "../MyLeetCode/stdafx.h"
 
 struct RandomListNode {
 	int label;
