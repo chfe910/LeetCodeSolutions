@@ -26,3 +26,11 @@
 *.exe
 *.out
 *.app
+
+# VS project files
+*.sln
+*.sdf
+Debug/
+Release/
+ipch/
+MyLeetCode/
