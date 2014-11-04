@@ -29,3 +29,9 @@
 
 # VS project files
 *.sln
+*.sdf
+*.opensdf
+Debug/
+Release/
+ipch/
+MyLeetCode/
