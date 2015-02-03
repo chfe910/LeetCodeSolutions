@@ -25,6 +25,7 @@ public:
 					curMinIdx = i;
 
 			tail->next = lists[curMinIdx];
+			tail = lists[curMinIdx];
 			lists[curMinIdx] = lists[curMinIdx]->next ? lists[curMinIdx]->next : lists[--leftLists];
 		}
 
