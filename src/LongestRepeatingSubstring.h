@@ -10,9 +10,7 @@ public:
 		size_t len = str.size();
 		vector<string> SuffixArray(len);
 		for (size_t i = 0; i < len; ++i)
-		{
 			SuffixArray[i] = str.substr(i);
-		}
 
 		sort(SuffixArray.begin(), SuffixArray.end());
 
@@ -35,10 +33,8 @@ private:
 	{
 		size_t len = min(str1.size(), str2.size());
 		for (size_t i = 0; i < len; ++i)
-		{
 			if (str1[i] != str2[i])
 				return i;
-		}
 		return len;
 	}
 };
