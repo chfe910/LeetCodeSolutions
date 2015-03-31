@@ -5,11 +5,9 @@ class Solution
 {
 public:
 	string LongestCommonSubstring(string str1, string str2) {
-		int len1 = str1.size();
-		int len2 = str2.size();
+		int len1 = str1.size(), len2 = str2.size();
 		int len = 0, idx = 0;
 		vector<vector<int> > c(len1 + 1, vector<int>(len2 + 1, 0));
-
 		for (int i = 1; i <= len1; ++i)
 			for (int j = 1; j <= len2; ++j) {
 				c[i][j] = (str1[i - 1] == str2[j - 1] ? c[i - 1][j - 1] + 1 : 0);
@@ -18,9 +16,30 @@ public:
 					idx = i;
 				}
 			}
-
 		return str1.substr(idx - len, len);
 	}
+};
+
+class Solution1
+{
+public:
+	/*string LongestCommonSubstring(string str1, string str2) {
+		int len1 = str1.size(), len2 = str2.size();
+		int len = len1 + len2, max = 0;
+		for (int i = 0; i < len; ++i){
+			int s1 = 0, s2 = 0;
+			if ()
+			int curMax = 0;
+			for (int j = 1; j <= len2; ++j) {
+				if (c[i][j] > len) {
+					len = c[i][j];
+					idx = i;
+				}
+			}
+
+		}
+		return str1.substr(idx - len, len);
+	}*/
 };
 
 class Tester
